@@ -31,8 +31,14 @@ margin: auto 8px;
 }
 /* general body of content */
 
-.content {
+.largetext {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 /* jumbotron 1 */
@@ -60,7 +66,7 @@ margin: auto 8px;
 }
 
 .title-jumbo1 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
 }
 
@@ -93,42 +99,147 @@ margin: auto 8px;
 
 .image-jumbo2 {
   max-width: 100%;
-
 }
 
 .image-jumbo2 img {
-  max-width: 489.75px;
+  max-width: 100%;
   height: auto;
 }
 
+.textbox-jumbo2 h2 {
+  padding: 32px 0 24px 0;
+}
+
+.strategist {
+  margin-top: 32px;
+}
 
 /* jumbotron 2 2nd column */
 
-.general-articles-jumbotron2 {
+.general-articles-jumbo2 {
   max-width: 40%;
+  margin-top: 16px;
 }
 
 .article-jumbo2 {
   display: inline-flex;
   align-items: center;
+  padding: 16px 0 16px 16px;
 }
 
 .text-column2 {
   max-width: 65%;
+  margin-left: 16px;
+  margin-right: 24px;
+}
 
+.text-column2 a {
+  color: blue;
 }
 
 .article-jumbo2 img {
   max-width: 35%;
   height: auto;
-  padding: 16px;
-}
-
-.title-sub {
-  font-size: 1.3rem;
-  font-weight: bold;
 }
 
 .words {
+  margin: 8px 0;
+}
+
+/* jumbotron 3 */
+
+.jumbotron-3 {
+  background-color: lightgrey;
+}
+
+.sectionheading-jumbo3 {
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.maincontainer-jumbo3 {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0 56px 32px;
+}
+
+.majors {
+  max-width: 250.66px;
+  margin: 16px;
+}
+
+.majors img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-jumbo3 {
+margin-bottom: 8px;
+}
+
+.textbox-jumbo3 {
+padding: 16px 16px 24px;
+}
+
+.textbox-jumbo3 p {
+  margin-top: 8px;
+}
+
+/* jumbotron 4 */
+
+.sectionheading-jumbo4 {
+  display: flex;
+  justify-content: center;
+  margin: 32px auto;
+}
+
+.container4 {
+  display: inline-flex;
+}
+
+/* jumbotron 4 column 1 */
+
+.column1-jumbo4 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 24px 32px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.title-jumbo4 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+/* jumbotron 4 column 2 */
+
+.column2-jumbo4 {
+  max-width: 40%;
+}
+
+.article-jumbo4 img {
+  max-width: 35%;
+  height: auto;
+}
+
+.article-jumbo4 {
+  display: inline-flex;
+  align-items: center;
+  padding: 16px 0 16px 16px;
+}
+
+.text4-column2 {
+  max-width: 65%;
+  margin-left: 16px;
+  margin-right: 24px;
+}
+
+.words4 {
   margin: 8px 0;
 }
