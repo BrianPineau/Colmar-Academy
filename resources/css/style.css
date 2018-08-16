@@ -1,7 +1,9 @@
 /* universal */
 
 html {
+  max-width: 100%;
   font-size: 16px;
+  align-self: center;
 }
 
 body {
@@ -9,6 +11,7 @@ body {
   border: 1px solid grey;
   display: flex;
   flex-direction: column;
+  font-family: "Alegreya Sans";
 }
 /*  header */
 
@@ -22,6 +25,12 @@ header {
   flex-grow: 1;
   max-width: 100%;
   height: 4rem;
+  background-color: rgb(131, 1, 26);
+  color: white;
+}
+
+header img {
+  filter: invert(100%);
 }
 
 .title {
@@ -69,16 +78,25 @@ header .mobile {
     width: 100%;
   }
 
-  .thebigone {
-
-  }
-
 }
 /* general body of content */
 
+li a {
+  color: white;
+}
+
+li a:hover {
+  color: black;
+}
+
 .largetext {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: bold;
+}
+
+.smalltext {
+  font-size: 1.3rem;
+  line-height: 1.3;
 }
 
 h2 {
@@ -86,22 +104,35 @@ h2 {
   font-weight: bold;
 }
 
+.bigbigtext {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: rgb(131, 1, 26);
+}
+
 /* jumbotron 1 */
 
 .textbox-jumbo1 {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
   margin-right: 80px;
+  text-align: center;
 }
 
 .jumbotron-1 {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  background-color: lightgrey;
+  background-color: rgba(141, 25, 47, 10%);
+  max-width: 100%;
 }
 
 .image-jumbo1 {
-  width: 60%;
+  max-width: 60%;
   margin: 32px 24px;
 }
 
@@ -110,25 +141,37 @@ h2 {
   height: auto;
 }
 
-.title-jumbo1 h1 {
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
 .textbox-jumbo1 p {
   font-size: 1.2em;
-  margin: 16px 0;
+  margin: 32px 0;
+}
+
+.jumbo1-paragraph {
+  font-size:
 }
 
 .link-jumbo1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: grey;
-  padding: 8px 0;
+  background-color: white;
+  border: 2px solid rgb(141, 25, 47);
+  padding: 8px 32px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
 }
 
-@media only screen and (max-width: 600px) {
+.link-jumbo1:hover {
+  transform: scale(1.05);
+  background-color: rgb(131, 1, 26);
+}
+
+.link-jumbo1 a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1009px) {
   .jumbotron-1 {
     display: flex;
     flex-direction: column;
@@ -140,7 +183,7 @@ h2 {
 
   .image-jumbo1 {
     margin: 0 0 32px 0;
-    width: 100%;
+    max-width: 100%;
   }
 
   .textbox-jumbo1 {
@@ -158,6 +201,7 @@ h2 {
 
 .jumbotron-2 {
   display: inline-flex;
+  background-color: rgba(182, 2, 36, 12%);
 }
 
 /* jumbotron 2 1st column */
@@ -165,7 +209,7 @@ h2 {
 .main-article {
   max-width: 60%;
   padding: 32px 24px;
-  border-right: 1px solid lightgrey;
+
 }
 
 .image-jumbo2 {
@@ -188,24 +232,41 @@ h2 {
 /* jumbotron 2 2nd column */
 
 .general-articles-jumbo2 {
+
   max-width: 40%;
-  margin-top: 16px;
+  padding-top: 16px;
 }
 
 .article-jumbo2 {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  padding: 16px 0 16px 16px;
+  padding: 16px 16px 16px 16px;
+  border: 1px solid rgb(131, 1, 26);
+  border-right-style: none;
+  border-left-style: none;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.article-jumbo2:hover {
+  color: white;
+  background-color: rgba(131, 1, 26, 90%);
+  transform: scale(1.1);
 }
 
 .text-column2 {
   max-width: 65%;
-  margin-left: 16px;
+  padding-left: 32px;
   margin-right: 24px;
+  text-align: left;
 }
 
 .text-column2 a {
   color: blue;
+}
+
+.chosenone {
+  font-size: 1rem;
 }
 
 .article-jumbo2 img {
@@ -226,10 +287,15 @@ h2 {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1009px) {
   .main-article,
   .normalview {
     display: none;
+}
+
+.jumbotron-2 {
+  display: flex;
+  max-width: 100%;
 }
 
 .wideview  {
@@ -237,6 +303,7 @@ h2 {
 }
 
 .wideview2 {
+display: flex;
   margin-top: 16px;
 }
 
@@ -251,26 +318,33 @@ h2 {
 }
 
 .infoboxes {
+display: flex;
   max-width: 100%;
+  height: auto;
 }
 
 .article-jumbo2 {
-  display:flex;
   flex-direction:column;
   align-items: flex-start;
   padding: 16px 16px 32px;
 }
 
+.wideview img {
+display: flex;
+  max-width: 100%;
+}
+
 .general-articles-jumbo2 {
   max-width: 100%;
-  margin: auto;
+  margin: 0;
+  flex: 1;
 }
 
 }
 /* jumbotron 3 */
 
 .jumbotron-3 {
-  background-color: lightgrey;
+  background-color: rgba(194, 157, 164, 20%);
 }
 
 .sectionheading-jumbo3 {
@@ -294,6 +368,15 @@ h2 {
 .majors {
   max-width: 33.333%;
   margin: 16px;
+  background-color: white;
+  border: 1px solid rgb(131, 1, 26);
+  transition: all 0.2s ease-in-out;
+}
+
+.majors:hover {
+  color: white;
+  background-color: rgba(131, 1, 26, 90%);
+  transform: scale(1.1);
 }
 
 .majors img {
@@ -313,7 +396,11 @@ padding: 16px 16px 24px;
   margin-top: 8px;
 }
 
-@media only screen and (max-width: 600px) {
+.chosentwo {
+  font-size: .9rem;
+}
+
+@media only screen and (max-width: 1009px) {
   .textbox-jumbo3 .subtitle,
   .textbox-jumbo3 p,
   .majors img {
@@ -362,11 +449,16 @@ padding: 16px 16px 24px;
 }
 /* jumbotron 4 */
 
+.jumbotron-4 {
+  background-color: rgba(153, 136, 139, 10%);
+}
+
 .sectionheading-jumbo4 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
-  margin: 32px auto;
+  margin: 0 auto 32px;
+  border-top: 32px solid rgba(153, 136, 139, 1%);
 }
 
 .container4 {
@@ -392,7 +484,7 @@ video {
   margin-bottom: 8px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1009px) {
   .column2-jumbo4,
   .textbox-col1-jumbo4 {
     display: none;
@@ -408,8 +500,6 @@ video {
     margin-bottom: 1rem;
   }
 
-
-
 }
 
 /* jumbotron 4 column 2 */
@@ -424,9 +514,20 @@ video {
 }
 
 .article-jumbo4 {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  background-color: white;
+  border: 1px solid rgb(131, 1, 26);
+  border-right-style: none;
+  border-left-style: none;
   padding: 16px 0 16px 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.article-jumbo4:hover {
+  color: white;
+  background-color: rgba(131, 1, 26, 90%);
+  transform: scale(1.1);
 }
 
 .text4-column2 {
@@ -446,15 +547,23 @@ footer {
   justify-content: space-between;
   max-width: 100%;
   padding: 16px 24px 32px 24px;
+  background-color: rgb(131, 1, 26);
+  color: white;
 }
 
 footer li {
   display: inline-flex;
   justify-content: flex-end;
+  padding-right: 8px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1009px) {
   footer {
     padding-bottom: 16px;
   }
+
+  footer {
+    justify-content: center;
+  }
+
 }
