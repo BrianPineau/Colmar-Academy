@@ -31,6 +31,7 @@ header {
 
 header img {
   filter: invert(100%);
+  margin-left: 20px;
 }
 
 .title {
@@ -51,6 +52,7 @@ right: 16px;
 .navigation-menu li {
 display: inline-flex;
 margin: auto 8px;
+cursor: pointer;
 }
 
 header .mobile {
@@ -58,6 +60,10 @@ header .mobile {
 }
 
 @media only screen and (max-width: 600px) {
+  header img {
+    margin-left: 0;
+  }
+
   .navigation-menu ul {
     display: none;
   }
@@ -429,6 +435,10 @@ padding: 16px 16px 24px;
     display: flex;
     max-width: 100%;
     margin: 0;
+  }
+
+  .majors:hover {
+    transform-origin: 25% 0;
   }
 
   .title-jumbo3 {
