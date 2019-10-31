@@ -256,7 +256,7 @@ h2 {
 
 .article-jumbo2:hover {
   color: white;
-  background-color: rgba(131, 1, 26, 90%);
+  background-color: rgb(131, 1, 26);
   transform: scale(1.1);
 }
 
@@ -306,11 +306,12 @@ h2 {
 
 .wideview  {
   display: flex;
+  margin-top: 16px;
 }
 
 .wideview2 {
 display: flex;
-  margin-top: 16px;
+  
 }
 
 .text-column2 {
@@ -381,7 +382,7 @@ display: flex;
 
 .majors:hover {
   color: white;
-  background-color: rgba(131, 1, 26, 90%);
+  background-color: rgb(131, 1, 26);
   transform: scale(1.1);
 }
 
@@ -413,12 +414,12 @@ padding: 16px 16px 24px;
     display: none;
   }
 
-  .jumbotron-3 {
-    padding-bottom: 28px;
+  .textbox-jumbo3 {
+    padding-bottom: 16px;
   }
 
   .sectionheading-jumbo3 {
-    padding-bottom: 0;
+    padding: 16px;
   }
 
   .maincontainer-jumbo3 {
@@ -507,7 +508,12 @@ video {
 
   .sectionheading-jumbo4 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    padding: 16px 0;
+    border: 0;
+    background-color: #F2EBED;
+    border: 1px solid rgb(131, 1, 26);
+    border-top: 0;
   }
 
 }
@@ -536,7 +542,7 @@ video {
 
 .article-jumbo4:hover {
   color: white;
-  background-color: rgba(131, 1, 26, 90%);
+  background-color: rgb(131, 1, 26);
   transform: scale(1.1);
 }
 
